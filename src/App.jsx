@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import WayToTeach from './components/WayToTeach'
+import Button from './components/Button/Button'
 import { ways } from './data'
 
 export default function App() {
@@ -10,7 +11,7 @@ export default function App() {
         <section>
           <h3>Как Result помогает достигать целей</h3>
           <ul>
-            <WayToTeach title={ways[0].title} description={ways[0].description}/>
+            <WayToTeach title={ways[0].title} description={ways[0].description} />
             <WayToTeach {...ways[1]} />
             <WayToTeach {...ways[2]} />
   
@@ -18,6 +19,9 @@ export default function App() {
         </section>
         <section>
           <h3>Почему выбирают Result University</h3>
+          <Button>Подход</Button>
+          <Button>Доступность</Button>
+          <Button>Концентрация</Button>
         </section>
       </main>
     </div>
