@@ -1,13 +1,14 @@
+import { useState } from "react";
 import logo from '/favicon.svg'
 
 export default function Header() {
-    const now = new Date()
-    const name = 'Лого Вит'
-    return (
+    const [now, setNow ] = useState(new Date());
 
+    setInterval(() => setNow(new Date()), 1000)
+    
+    return (
         <header>
-            <img src={logo} alt={name}></img>
-            {/* <h3>Тест</h3> */}
+            <img src={logo} alt={"Vite"}></img>
             <span>Время сейчас: {now.toLocaleTimeString()}</span>
         </header>
 
