@@ -18,8 +18,8 @@ export default function IntroSection() {
         'section', 
         null, 
         [
-            e('h1', {className: 'centered'}, 'Result University'),
-            e('h3', {className: 'centered', style: { color: '#666666' }}, 'Университет Frontend & AI разработки')
+            e('h1', {className: 'centered', key: 1 }, 'Result University'),
+            e('h3', {className: 'centered', style: { color: '#666666' }, key: 2}, 'Университет Frontend & AI разработки')
         ]
     )
 }
