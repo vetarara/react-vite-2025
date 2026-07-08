@@ -18,9 +18,9 @@ export default function App() {
         <section>
           <h3>Как Result помогает достигать целей</h3>
           <ul>
-            <WayToTeach {...ways[0]} />
-            <WayToTeach {...ways[1]} />
-            <WayToTeach {...ways[2]} />
+            {ways.map((way) => (
+               <WayToTeach key={way.title} {...way} />
+            ))}
   
           </ul>
         </section>
@@ -47,7 +47,7 @@ export default function App() {
             Концентрация
           </Button>
 
-          { !contentType && <p>Нажми</p> }
+          { !contentType && <p>Нажми на кнопку</p> }
           { contentType && <p>{differences[contentType]}</p> }
           
         </section>
