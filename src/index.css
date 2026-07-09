@@ -13,7 +13,7 @@ body {
 header {
   height: 3rem;
   display: flex;
-  padding: 0 2rem;
+  padding: 3rem 4rem;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #cccccc;
@@ -51,3 +51,10 @@ p {
   text-align: center;
 }
 
+.control {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
